@@ -1,8 +1,13 @@
 import React from "react";
 import HomePage from "./pages/HomePage";
+import { ModalProvider } from "./contexts/ModalContext";
 
 function App() {
-  return <HomePage />;
+  return (
+    <ModalProvider>
+      <HomePage />
+    </ModalProvider>
+  );
 }
 
 export default App;
